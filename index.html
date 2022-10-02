@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Band Template</title>
+    <link rel="stylesheet" href="./font-icons/fontawesome-free-6.1.2-web/css/all.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body>
+    <div class="head">
+        <ul id="header__list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#band">Band</a></li>
+            <li><a href="#tour">Tour</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+                <a href="#">
+                    More
+                    <i class="fa-solid fa-caret-down"></i>
+                </a>
+                <ul class="header__list-sub">
+                    <li><a href="#">Merchandise</a></li>
+                    <li><a href="#">Extras</a></li>
+                    <li><a href="#">Media</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <form class="header__search">
+            <input type="text" placeholder="Search">
+            <button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </form>
+    </div>
+
+    <div class="container">
+        <div id="home">
+            <img src="./images/New_york.jpg" alt="New York image" class="home__img">
+            <div class="home__img-info">
+                <h3>New York</h3>
+                <p>The atmosphere in New York is lorem ipsum.</p>
+            </div>
+        </div>
+
+        <div id="band" class="container__selecter">
+            <h2 class="heading">THE BAND</h2>
+            <h3 class="heading-sub">We love music</h3>
+            <p class="text">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+            <div class="band__member-list">
+                <div class="band__member-item">
+                    <p class="band__member-item-name">Dương Hằng</p>
+                    <img src="./images/Duong_hang.jpg" alt="" class="band__member-item-img">
+                </div>
+
+                <div class="band__member-item">
+                    <p class="band__member-item-name">Trần Văn Anh </p>
+                    <img src="./images/bandmember.jpg" alt="" class="band__member-item-img">
+                </div>
+
+                <div class="band__member-item">
+                    <p class="band__member-item-name">Minh Huyền</p>
+                    <img src="./images/Minh_huyen.jpg" alt="" class="band__member-item-img">
+                </div>
+            </div>
+        </div>
+
+        <div id="tour" class="tour__selecter">
+            <div class="container__selecter">
+                <h2 class="heading">TOUR DATES</h2>
+                <h3 class="heading-sub">Remember to book your tickets!</h3>
+                <ul class="tour__list-tickets">
+                    <li>September <span class="Sold-out">Sold out</span></li>
+                    <li>October <span class="Sold-out">Sold out</span></li>
+                    <li>November <span class="Quality">3</span></li>
+                </ul>
+
+                <div class="tour__ticket-list">
+                    <div class="tour__ticket-item">
+                        <img src="./images/newyork.jpg" alt="New York" class="tour__ticket-item-img">
+                        <div class="tour__ticket-item-body">
+                            <h3 class="tour__ticket-item-heading">New York</h3>
+                            <p class="tour__ticket-item-date">Fri 27 Nov 2016</p>
+                            <p class="tour__ticket-item-para">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class="buy-ticket-btn btn">Buy Tickets</button>
+                        </div>
+                    </div>
+
+                    <div class="tour__ticket-item">
+                        <img src="./images/paris.jpg" alt="New York" class="tour__ticket-item-img">
+                        <div class="tour__ticket-item-body">
+                            <h3 class="tour__ticket-item-heading">New York</h3>
+                            <p class="tour__ticket-item-date">Fri 27 Nov 2016</p>
+                            <p class="tour__ticket-item-para">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class="buy-ticket-btn btn">Buy Tickets</button>
+                        </div>
+                    </div>
+
+                    <div class="tour__ticket-item">
+                        <img src="./images/sanfran.jpg" alt="New York" class="tour__ticket-item-img">
+                        <div class="tour__ticket-item-body">
+                            <h3 class="tour__ticket-item-heading">New York</h3>
+                            <p class="tour__ticket-item-date">Fri 27 Nov 2016</p>
+                            <p class="tour__ticket-item-para">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class="buy-ticket-btn btn">Buy Tickets</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="contact" class="container__selecter">
+            <h2 class="heading">CONTACT</h2>
+            <h3 class="heading-sub">Fan? Drop a note!</h3>
+
+            <div class="row contact-content">
+                <div class="col col-double contact-info">
+                    <p><i class="contact__info-icon fa-solid fa-location-dot"></i>Thanh Hóa, Việt Nam</p>
+                    <p><i class="contact__info-icon fa-solid fa-phone"></i>Phone: <a href="tell:+84 0334237519">+84 0334237519</a></p>
+                    <p><i class="contact__info-icon fa-solid fa-envelope"></i>Email: <a href="mailto:anh038953@mail.com">anh038953@mail.com</a></p>
+                </div>
+
+                <div class="col col-double contact-form">
+                    <form action="">
+                        <div class="row">
+                            <div class="col col-double">
+                                <input type="text" name="" placeholder="Name" required id="" class="form-control">
+                            </div>
+                            <div class="col col-double">
+                                <input type="email" name="" placeholder="Email" required id="" class="form-control">
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+                            <div class="col col-full">
+                                <input type="text" name="" placeholder="Message" required id="" class="form-control">
+                            </div>
+                        </div>
+
+                        <button class="send-btn btn">Send</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-map">
+            <img src="./images/map.jpg" alt="map selection">
+        </div>
+
+    </div>
+
+    <div id="footer" class="footer">
+        <div class="social-network-list">
+            <a href="#footer">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="#footer">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#footer">
+                <i class="fa-brands fa-snapchat"></i>
+            </a>
+            <a href="#footer">
+                <i class="fa-brands fa-pinterest-p"></i>
+            </a>
+            <a href="#footer">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="#footer">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <p>Bản quyền thuộc về Trần Văn Anh</p>
+        </div>
+    </div>
+</body>
+</html>

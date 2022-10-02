@@ -1,0 +1,330 @@
+.head {
+    height: var(--header-height);
+    background-color: var(--primary-color);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#header__list {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+
+#header__list > li {
+    display: inline-block;
+    
+}
+
+#header__list li {
+    position: relative;
+}
+
+
+#header__list li a {
+    padding: 15px 18px;
+    display: block;
+    color: var(--white-color);
+}
+
+
+#header__list > li:hover > a,
+#header__list .header__list-sub li:hover a {
+    background-color: var(--background-hover-color);
+    color: var(--primary-color);
+}
+
+#header__list  li:hover .header__list-sub {
+    display: block;
+}
+
+.header__list-sub {
+    list-style: none;
+    min-width: 160px;
+    background-color: var(--white-color);
+    display: none;
+    position: absolute;
+    box-shadow: 0 0 5px #ccc;
+    top: 100%;
+    left: 0;
+}
+
+#header__list .header__list-sub a {
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    line-height: 35px;
+    padding: 0 12px;
+
+}
+
+/* ================ */
+
+.header__search {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+}
+
+.header__search input, button {
+    border: none;
+    outline: none;
+    color: var(--white-color);
+    background-color: rgb(147, 145, 145);
+}
+
+.header__search input {
+    width: 300px;
+    border-radius: 5px;
+    padding: 5px 12px;
+}
+
+::placeholder {
+    color: #ccc;
+    font-size: 1.4rem;
+}
+
+.header__search button {
+    background-color: transparent;
+    cursor: pointer;
+    width: 70px;
+    line-height: var(--header-height);
+}
+
+/* ============= */
+
+.container {
+
+}
+
+#home {
+    margin-top: var(--header-height);
+    position: relative;
+}
+
+.home__img {
+    width: 100%;
+}
+
+#home .home__img-info {
+    text-align: center;
+    color: var(--white-color);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    font-size: 1.5rem;
+    margin-bottom: 48px;
+    transform: translate(-50%, 0);
+}
+
+#home .home__img-info h3 {
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+
+#home .home__img-info p {
+    padding-top: 25px;
+}
+
+.container__selecter {
+    width: 800px;
+    padding: 64px 16px;
+    margin: 0 auto 0;
+}
+
+.heading {
+    color: #828282;
+    text-align: center;
+    padding: 5px 0;
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.heading-sub {
+    font-style: italic;
+    color: #666;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+.text {
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+.band__member-list {
+    padding: 54px 0 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.band__member-item {
+
+}
+
+.band__member-item-name {
+    text-align: center;
+    font-size: 1.3rem;
+    margin: 15px 0;
+}
+
+.band__member-item-img {
+    border-radius: 3px;
+    margin-bottom: 15px;
+    width: 155px;
+}
+
+.tour__selecter {
+    width: 100%;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+#tour .heading {
+    color: var(--white-color);
+}
+
+.tour__list-tickets {
+    list-style: none;
+    font-size: 1.4rem;
+    color: rgb(120, 120, 120);
+    background-color: var(--white-color);
+}
+
+.tour__list-tickets li {
+    border-bottom: 1px solid #ccc;
+    padding: 12px 20px;
+}
+
+.Sold-out {
+    background-color: #f44336;
+    color: var(--white-color);
+    padding: 4px 10px;
+    margin-left: 20px;
+}
+
+.Quality {
+    float: right;
+    margin-top: -5px;
+    padding: 5px 10px;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    border-radius: 50%;
+}
+
+.tour__ticket-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -16px;
+    padding: 32px 16px;
+}
+
+.tour__ticket-item {
+    width: 245px;
+}
+
+.tour__ticket-item-img {
+    width: 100%;
+}
+
+.tour__ticket-item-img:hover {
+    opacity: 0.6;
+}
+
+.tour__ticket-item-body {
+    padding: 16px;
+    color: #333;
+    background-color: var(--white-color);
+}
+
+.tour__ticket-item-heading {
+    font-weight: 550;
+    font-size: 1.6rem;
+}
+
+.tour__ticket-item-date {
+    padding: 22px 0;
+    font-size: 1.4rem;
+    color: #828282;
+}
+
+.tour__ticket-item-para {
+    color: var(--primary-color);
+    line-height: 1.8rem;
+    font-size: 1.4rem;
+}
+
+.buy-ticket-btn {
+    margin-top: 20px;
+}
+
+/* ========== contact ================ */
+
+.contact-content {
+
+}
+
+.contact-info {
+    font-size: 1.4rem;
+}
+
+.contact-info p {
+    margin-bottom: 5px;
+}
+
+.contact__info-icon {
+    font-size: 1.6rem;
+    margin-right: 15px;
+}
+
+.contact-info a {
+    color: var(--primary-color);
+    opacity: 0.6;
+}
+
+.contact-form .form-control {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    width: 100%;
+
+}
+
+.send-btn {
+    float: right;
+    margin-top: 10px;
+}
+
+.contact-map img {
+    margin-top: 70px;
+    width: 100%;
+}
+
+/* =============== FOOTER ================ */
+
+.footer {
+    padding: 80px;
+}
+
+.social-network-list {
+    text-align: center;
+}
+
+.social-network-list a {
+    font-size: 2.6rem;
+    color: var(--primary-color);
+    padding: 0 4px;
+}
+
+.social-network-list a:hover {
+    opacity: 0.5;
+}
+
+.social-network-list p {
+    font-size: 1.2rem;
+    padding-top: 20px;
+}

@@ -1,0 +1,33 @@
+
+
+/* TABLET */
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .header__search input {
+        width: 200px;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 739px) {
+    .head {
+        overflow: hidden;
+    }
+
+    #header__list li{
+        display: block;
+    }
+
+    .header__search input {
+        display: none;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .band__member-list {
+        display: block;
+    }
+}
